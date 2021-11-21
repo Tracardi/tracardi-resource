@@ -1,0 +1,2 @@
+recursive-include tracardi_resource/model *
+recursive-include tracardi_resource/service *
