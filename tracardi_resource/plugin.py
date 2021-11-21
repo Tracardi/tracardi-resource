@@ -22,7 +22,7 @@ def register() -> Plugin:
             className='ReadResourceAction',
             inputs=["payload"],
             outputs=['payload'],
-            version='0.1',
+            version='0.6.0',
             license="MIT",
             author="Risto Kowaczewski",
             init={}
@@ -34,6 +34,6 @@ def register() -> Plugin:
             width=200,
             height=100,
             icon='tower',
-            group=["General"]
+            group=["Operations"]
         )
     )
