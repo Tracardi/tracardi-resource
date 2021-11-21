@@ -28,7 +28,7 @@ def register() -> Plugin:
             init={}
         ),
         metadata=MetaData(
-            name='Resource reader',
+            name='Read source',
             desc='This plugin reads the source that the event came from.',
             type='flowNode',
             width=200,
