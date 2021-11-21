@@ -11,7 +11,7 @@ class ReadResourceAction(ActionRunner):
 
     async def run(self, payload):
         resource = await storage.driver.resource.load(self.event.source.id)
-        return Result(port="payload", value=resource.dict())
+        return Result(port="payload", value=resource.dict(exclude={"config": ...}))
 
 
 def register() -> Plugin:
@@ -29,11 +29,11 @@ def register() -> Plugin:
         ),
         metadata=MetaData(
             name='Resource reader',
-            desc='This plugin reads the source the workflow was executed from.',
+            desc='This plugin reads the source that the event came from.',
             type='flowNode',
             width=200,
             height=100,
-            icon='icon',
+            icon='tower',
             group=["General"]
         )
     )
