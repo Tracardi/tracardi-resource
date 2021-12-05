@@ -13,7 +13,7 @@ setup(
     author_email='risto.kowaczewski@gmail.com',
     packages=['tracardi_resource'],
     install_requires=[
-        'tracardi-plugin-sdk>=0.6.29',
+        'tracardi-plugin-sdk>=0.6.30',
         'tracardi'
     ],
     classifiers=[
